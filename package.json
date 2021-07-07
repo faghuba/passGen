@@ -1,12 +1,14 @@
 {
-  "name": "passgen",
+  "name": "passGen",
   "version": "1.0.0",
-  "description": "",
+  "description": "password Generator",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "aghuba",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
