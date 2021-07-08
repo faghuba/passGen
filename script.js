@@ -10,11 +10,11 @@ const savedPassword = require('./utils/savedPassword')
 program.version('{ }').description('Simple password generator')
 
 program
-    .option('-L, --length <number>', 'length of password', '12')
-    .option('-S, --save', 'Save password to passwords.txt')
-    .option('-RN, --no-numbers', 'Remove numbers')
-    .option('-RS, --no-symbols', 'Remove Symbols')
-    .parse();
+    .option('-L, --length <number>', 'length of password', '12') //password length is descriptive 
+    .option('-S, --save', 'Save password to passwords.txt') //Password save dfrom the password.txt file 
+    .option('-RN, --no-numbers', 'Remove numbers') //no numbers to view when the password is generated.
+    .option('-RS, --no-symbols', 'Remove Symbols') //String to remove the symbols when geneating password 
+    .parse(); //Run the entire quesry for password generation
 
 const { length, save, numbers, symbols } = program.opts()
 
